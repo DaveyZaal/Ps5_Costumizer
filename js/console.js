@@ -177,3 +177,18 @@ function setDeBeweging() {
 }
 
 setDeBeweging();
+
+// button declaraties
+var terugBtn = document.querySelector('.terugBtn');
+var volgendeBtn = document.querySelector('.volgendeBtn');
+
+function paginaTerug() {
+  window.history.back();
+}
+
+function volgendePagina() {
+  window.location='selecteerSpel.html';
+}
+
+terugBtn.addEventListener('click', paginaTerug);
+volgendeBtn.addEventListener('click', volgendePagina);
