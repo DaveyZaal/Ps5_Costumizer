@@ -24,6 +24,9 @@ var primBody = document.querySelector('#primBody');
 var secndWrap = document.querySelector('#secndWrap');
 var secndBody = document.querySelector('#secndBody');
 
+var itemLaagPrim = document.querySelector('#itemLaagPrim');
+var itemLaagSecnd = document.querySelector('#itemLaagSecnd');
+
 primWrap.addEventListener("click", function(){welkeSectie('prim');}, false);
 secndWrap.addEventListener("click", function(){welkeSectie('secnd');}, false);
 
@@ -85,13 +88,14 @@ function welkeKleurPrim(kleurCode) {
       primKleuren[i].classList.remove('isKleurVakActive');
   }
   kleurSelecPrim.style.background = "#"+kleurCode;
+  itemLaagPrim.style.fill = "#"+kleurCode;
   var vakje = document.getElementById(kleurCode);
   vakje.classList.add('isKleurVakActive');
 }
 
 
 
-var secndItems = ["FCB80F", "FC4570","D53790", "E8E5DF",  "44CBA4", "013791"];
+var secndItems = ["FCB80F", "FC4570","D53790", "222322",  "44CBA4", "013791"];
 var kleurSelecSecnd = document.querySelector('#kleurSelecSecnd');
 var secndKleuren = document.getElementsByClassName("secndKleuren");
 
@@ -104,6 +108,7 @@ function welkeKleurSecnd(kleurCode) {
       secndKleuren[i].classList.remove('isKleurVakActive');
   }
   kleurSelecSecnd.style.background = "#"+kleurCode;
+  itemLaagSecnd.style.fill = "#"+kleurCode;
   var vakje = document.getElementById(kleurCode);
   vakje.classList.add('isKleurVakActive');
 }

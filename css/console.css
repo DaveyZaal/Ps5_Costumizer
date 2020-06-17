@@ -53,44 +53,22 @@
 
 .previewItemLaag1{
   position: absolute;
-  padding-bottom: 0.8em;
-  width: 23.7em;
-  height: 23.7em;
-  mix-blend-mode: color-burn;
-  fill: none;
-  transition: 0.2s ease;
+    padding-bottom: 0.2em;
+    width: 48.4em;
+    height: 48.4em;
+    mix-blend-mode: color-burn;
+    fill: none;
+    transition: 0.2s ease;
 }
 
 .previewItemLaag2{
   position: absolute;
-  padding-top: 3.6em;
-  padding-left: 0.16em;
-  width: 20em;
-  height: 20em;
-  mix-blend-mode: color-burn;
-  fill: none;
-  transition: 0.2s ease;
-}
-
-.previewItemLaag3{
-  position: absolute;
-  padding-bottom: 0.95em;
-  width: 10.4em;
-  height: 10.4em;
-  mix-blend-mode: color-burn;
-  fill: none;
-  transition: 0.2s ease;
-}
-
-.previewItemLaag4{
-  position: absolute;
-  padding-bottom: 7.4em;
-  padding-left: 0.5em;
-  width: 19.3em;
-  height: 19.3em;
-  mix-blend-mode: color-burn;
-  fill: none;
-  transition: 0.2s ease;
+    padding-bottom: 0.2em;
+    width: 48.4em;
+    height: 48.4em;
+    mix-blend-mode: color-burn;
+    fill: none;
+    transition: 0.2s ease;
 }
 
 .cutomizeSection{
