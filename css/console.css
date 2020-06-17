@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  position: absolute;
 }
 
 .cutomizePreview{
@@ -141,10 +142,10 @@
 
 @keyframes silderFade {
   0%{
-    width: 0%;
+    width: 33.33%;
   }
   100%{
-    width: 33.33%;
+    width: 66.66%;
   }
 }
 
@@ -178,6 +179,18 @@
 
 #voortgangItem1{
   background: #003791;
+}
+
+#voortgangItem2{
+  background: #003791;
+}
+
+#voortgangItem3{
+
+}
+
+#voortgangItem4{
+
 }
 
 .voortgangItem::after{
