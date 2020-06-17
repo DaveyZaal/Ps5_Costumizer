@@ -138,3 +138,15 @@ function setDeBeweging() {
     imgBewegenVak.style.transform = style;
   };
 }
+
+var controllerBtn = document.querySelector('#controllerBtn');
+var consoleBtn = document.querySelector('#consoleBtn');
+var gameBtn = document.querySelector('#gameBtn');
+
+function indexPageLink() {
+  window.location='controller.html';
+}
+
+controllerBtn.addEventListener('click', indexPageLink);
+consoleBtn.addEventListener('click', indexPageLink);
+gameBtn.addEventListener('click', indexPageLink);
