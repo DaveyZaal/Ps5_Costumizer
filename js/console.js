@@ -5,6 +5,7 @@ function cutomizePreviewIn() {
   cutomizePreview.style.clipPath = "polygon(0 0, 45% 0, 65% 100%, 0% 100%)";
   cutomizePreviewItem.style.transform = "scale(1.1)";
   cutomizePreviewItem.style.left = "10%";
+  geluidje();
 }
 
 cutomizePreview.addEventListener('mouseenter', cutomizePreviewIn);
@@ -17,7 +18,6 @@ function cutomizeSectionIn() {
 
 cutomizeSection.addEventListener('mouseenter', cutomizeSectionIn);
 cutomizePreview.addEventListener('mouseleave', cutomizeSectionIn);
-
 
 var primWrap = document.querySelector('#primWrap');
 var primBody = document.querySelector('#primBody');

@@ -35,7 +35,7 @@ var gameScreen = document.querySelector('#game_screen');
 var gameOmschrijving = document.querySelector('#gameOmschrijving');
 
 toonHuidigeFoto();
-gameInfoUpdate();	
+gameInfoUpdate();
 
 function toonHuidigeFoto() {
     fotoImg.src = 'assets/games/' + fotos[huidigFotoNr];
@@ -47,16 +47,16 @@ function bladerVooruit() {
     huidigFotoNr = huidigFotoNr + 1 ;
     huidigLinks = huidigLinks + 1;
     huidigRechts = huidigRechts + 1;
-	if ( huidigFotoNr > fotos.length -1 ) { // voorbij het einde 
+	if ( huidigFotoNr > fotos.length -1 ) { // voorbij het einde
         huidigFotoNr = 0 ;
     }
-    if ( huidigLinks > fotos.length -1 ) { // voorbij het einde 
+    if ( huidigLinks > fotos.length -1 ) { // voorbij het einde
         huidigLinks = 0 ;
     }
-    if ( huidigRechts > fotos.length -1 ) { // voorbij het einde 
+    if ( huidigRechts > fotos.length -1 ) { // voorbij het einde
         huidigRechts = 0 ;
     }
-    toonHuidigeFoto();	
+    toonHuidigeFoto();
     gameInfoUpdate();
 }
 
@@ -64,14 +64,14 @@ function bladerAchteruit() {
     huidigFotoNr = huidigFotoNr - 1 ;
     huidigLinks = huidigLinks - 1;
     huidigRechts = huidigRechts - 1;
-	if ( huidigFotoNr < 0 ) { 
-		huidigFotoNr = 3 ; 
+	if ( huidigFotoNr < 0 ) {
+		huidigFotoNr = 3 ;
     }
-    if ( huidigLinks < 0 ) { 
-		huidigLinks = 3 ; 
+    if ( huidigLinks < 0 ) {
+		huidigLinks = 3 ;
     }
-    if ( huidigRechts < 0 ) { 
-		huidigFotoNr = 3 ; 
+    if ( huidigRechts < 0 ) {
+		huidigFotoNr = 3 ;
 	}
     toonHuidigeFoto();
     gameInfoUpdate();

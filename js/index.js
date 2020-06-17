@@ -5,6 +5,12 @@ function isLaden() {
   loadingScreen.classList.add('loadingVerdwijnen');
 }
 
+var geluidjeDiv = document.getElementsByClassName("geluidje");
+
+for (var i = 0; i < geluidjeDiv.length; i++) {
+    geluidjeDiv[i].addEventListener('mouseenter', geluidje, false);
+}
+
 var navBtn = document.getElementsByClassName("navBtn");
 
 var menuIcon = document.querySelector("#menuIcon");

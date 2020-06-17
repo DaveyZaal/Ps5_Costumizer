@@ -5,6 +5,7 @@ function cutomizePreviewIn() {
   cutomizePreview.style.clipPath = "polygon(0 0, 45% 0, 65% 100%, 0% 100%)";
   cutomizePreviewItem.style.transform = "scale(1.1)";
   cutomizePreviewItem.style.left = "10%";
+  geluidje();
 }
 
 cutomizePreview.addEventListener('mouseenter', cutomizePreviewIn);
