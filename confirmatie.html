@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ps5</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/confirmatie.css">
+  </head>
+  <body>
+    <div id="loadingScreen" class="loadingScreen">
+      <div class="loadingCon">
+        <div class="logoClip">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400.53 80.19"><path id="Path_10" data-name="Path 10" d="M322.94,79.84h79.88V0H322.94Zm16-63.9h47.92V63.86H338.92Z" transform="translate(-2.29 0.35)"/><path id="Path_5" data-name="Path 5" d="M257.92-.35a39.94,39.94,0,1,0,39.94,39.94h0A40,40,0,0,0,257.92-.35Zm0,63.9a24,24,0,1,1,24-24,24,24,0,0,1-24,24Z" transform="translate(-2.29 0.35)"/><path id="Path_6" data-name="Path 6" d="M2.29,79.65H93.72L48-.35Zm27.53-16L48,31.85,66.19,63.67Z" transform="translate(-2.29 0.35)"/><path id="Path_8" data-name="Path 8" d="M125,78.66l28-28,27.95,28,11.3-11.3-28-28,28-27.95L180.92.15,153,28.11l-28-28-11.3,11.3,28,28-28,28Z" transform="translate(-2.29 0.35)"/></svg>
+        </div>
+        <div class="logoVierkant">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400.53 80.19"><path id="Path_10" data-name="Path 10" d="M322.94,79.84h79.88V0H322.94Zm16-63.9h47.92V63.86H338.92Z" transform="translate(-2.29 0.35)"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="stapTerugWrap">
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+      <button type="button" name="button" class="terugBtn">Vorige stap</button>
+    </div>
+
+    <div class="cutomizeVoortgangWrap">
+      <div class="voortgangSlider">
+        <div class="voortgangInnerSlider"></div>
+      </div>
+      <div class="voortgangItems">
+        <div class="voortgangItemWrap">
+          <div class="voortgangItem" id="voortgangItem1" ></div>
+        </div>
+        <div class="voortgangItemWrap" >
+          <div class="voortgangItem" id="voortgangItem2" ></div>
+        </div>
+        <div class="voortgangItemWrap" >
+          <div class="voortgangItem" id="voortgangItem3" ></div>
+        </div>
+        <div class="voortgangItemWrap" >
+          <div class="voortgangItem" id="voortgangItem4" ></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="confirmatieWrap">
+      <div class="confirmatieForm">
+        <form class="" action="index.html" method="post">
+          <p>Vul jouw gegevens hieronder in om de bestelling af te ronden.</p>
+          <div class="input1">
+            <h3>Aanhef:</h3>
+            <input type="radio" name="Aanhef" value="Mevrouw">
+            <label for="Mevrouw">Mevrouw</label>
+            <input type="radio" name="Aanhef" value="De heer">
+            <label for="Deheer">De heer</label>
+          </div>
+          <div class="input1">
+            <h3>Voornaam:</h3>
+            <input type="text" name="voornaam" placeholder="">
+          </div>
+          <div class="input1">
+            <h3>Achternaam:</h3>
+            <input type="text" name="achternaam" placeholder="">
+          </div>
+          <div class="input1">
+            <h3>Straatnaam:</h3>
+            <input type="text" name="straat" placeholder="">
+          </div>
+          <div class="input1">
+            <h3>Huisnummer:</h3>
+            <input type="text" name="huisnummer" placeholder="">
+          </div>
+          <div class="input1">
+            <h3>Postcode:</h3>
+            <input type="text" name="postcode" placeholder="">
+          </div>
+
+          <div class="contactInfo">
+            <div class="input2">
+              <h3>E-mail:</h3>
+              <input type="email" name="email" placeholder="">
+            </div>
+            <div class="input2">
+              <h3>Telefoonummer:</h3>
+              <input type="text" name="Telefoonummer" placeholder="">
+            </div>
+          </div>
+
+          <div class="betalingsMethode">
+            <div class="input2">
+              <h3>Betalingsmethode:</h3>
+                <select id="cars" name="Selecteer methode">
+                  <option value="iDeal"><span></span>iDeal</option>
+                  <option value="PayPal">PayPal</option>
+                  <option value="Mastercard">Mastercard</option>
+                </select>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="confirmatieGekozen">
+        <div class="confirmatieGekozenCont">
+          <h3 class="winkelW">Winkelwagen</h3>
+          <div class="gekozenItemWrap" id="gekozenItem1">
+            <div class="gekozenItemImg"></div>
+            <div class="gekozenItemTekst">
+              <h3>PS5 Console</h3>
+              <p>Customized</p>
+            </div>
+          </div>
+          <div class="gekozenItemWrap" id="gekozenItem2">
+            <div class="gekozenItemImg"></div>
+            <div class="gekozenItemTekst">
+              <h3>PS5 Controller</h3>
+              <p>Customized</p>
+            </div>
+          </div>
+          <div class="gekozenItemWrap" id="gekozenItem3">
+            <div class="gekozenItemImg"></div>
+            <div class="gekozenItemTekst">
+              <h3>PS5 - The Last Of Us II</h3>
+              <p>Customized</p>
+            </div>
+          </div>
+          <div class="betalenWrap">
+            <p>Totaalprijs: <span>€1100,-</span></p>
+            <button type="button" name="button" class="volgendeBtn">Betalen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menuWrap">
+      <div id="menuContainer" class="menuContainer">
+        <div id="menuBg" class="menuBg"></div>
+        <div id="menuBgRight"></div>
+        <ul>
+          <li class="navBtn"><a href="#">FAQ</a></li>
+          <li class="navBtn"><a href="#">Hoe werkt het?</a></li>
+          <li class="navBtn"><a href="#">Support</a></li>
+          <li class="navBtn"><a href="#">Demo's</a></li>
+        </ul>
+      </div>
+      <div id="menuIcon" class="menuIcon">
+        <div class="menuIconEl"></div>
+        <div class="menuIconEl"></div>
+        <div class="menuIconEl"></div>
+      </div>
+      <div class="menuItems"></div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/confirmatie.js"></script>
+  </body>
+</html>
